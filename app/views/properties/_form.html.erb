@@ -48,6 +48,8 @@
     <p><%= g.text_field :time %>分</p>
   <% end %>
 
+  <%= @property.nearest_station_count %> 件の最寄り駅が登録されています。
+
   <div class="actions">
     <%= form.submit '登録する' %>
   </div>

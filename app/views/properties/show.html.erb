@@ -41,6 +41,8 @@
     <strong>徒歩分数:</strong>
     <%= "#{nearest_station.time}分" %>
   </p>
+
+<%= @property.nearest_station_count %> 件の最寄り駅が登録されています。
 <% end %>
 
 <%= link_to '編集', edit_property_path(@property) %> |
