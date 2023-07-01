@@ -10,7 +10,6 @@ class PropertiesController < ApplicationController
 
   def new
     @property = Property.new
-    @pro
     2.times { @property.nearest_stations.build }
   end
 
@@ -62,6 +61,6 @@ class PropertiesController < ApplicationController
     end
 
     def property_params
-      params.require(:property).permit(:property_name, :rent, :address, :age, :note, nearest_stations_attributes: [:id, :line, :station, :on_foot])
+      params.require(:property).permit(:property_name, :rent, :address, :age, :note, nearest_stations_attributes: [:id, :route_name, :station_name, :time])
     end
 end

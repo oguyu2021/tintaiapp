@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_30_044430) do
+ActiveRecord::Schema.define(version: 2023_06_30_232538) do
 
   create_table "nearest_stations", force: :cascade do |t|
     t.string "route_name"
     t.string "station_name"
-    t.time "integer"
+    t.integer "time", default: 0
     t.integer "proprty_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
